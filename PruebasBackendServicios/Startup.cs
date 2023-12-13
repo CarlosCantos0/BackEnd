@@ -45,11 +45,6 @@ namespace PruebasBackend
         public void ConfigureServices(IServiceCollection services)
         {
 
-            //services.AddDbContext<BVDataContext>(
-            //    options => options.UseSqlServer(
-            //        Configuration.GetConnectionString("DbConnection"),
-            //         b => b.MigrationsAssembly("PruebasBackendServicios"))
-            //    );
 
             services.AddDbContext<PruebasBackendContext>(
                 options =>options.UseSqlServer(Configuration.GetConnectionString("DbConnection"))
@@ -88,16 +83,8 @@ namespace PruebasBackend
                 };
             });
 
-            // OTRAS PRUEBAS
-            //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-            //    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,
-            //        options =>
-            //        {
-            //            options.LoginPath = new PathString("/auth/login");
-            //            options.AccessDeniedPath = new PathString("/auth/denied");
-            //        });
 
-            //Forzar Autorizacion (Falta algo ¿?)            
+            //Forzar Autorizacion          
             services.AddAuthorization(options =>
             {
                 options.FallbackPolicy = new AuthorizationPolicyBuilder()
@@ -112,7 +99,6 @@ namespace PruebasBackend
 
 
             // Publicar Unidades de Trabajo -------------------------------------------------
-            services.AddScoped<IEntidadesBasicasUnitOfWork, EntidadesBasicasUnitOfWork>();
             services.AddScoped<IUsuariosUnitOfWork, UsuariosUnitOfWork>();
             //services.AddScoped<IClientesUnitOfWork, ClientesUnitOfWork>();
             services.AddScoped<IElementosUnitOfWork, ElementosUnitOfWork>();
@@ -198,19 +184,6 @@ namespace PruebasBackend
                 endpoints.MapControllers();
             });
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapControllerRoute(
-            //        name: "Areas",
-            //        pattern: "api/{area:exists}/{controller=Home}/{action=Index}/{id?}");
-
-            //    endpoints.MapControllerRoute(
-            //        name: "default",
-            //        pattern: "api/{controller=Home}/{action=Index}/{id?}");
-
-            //    endpoints.MapHub<ProgressHub>("/progresshub");
-
-            //});
         }
     }
 }
