@@ -286,3 +286,5 @@ C:\Users\Krl's\Desktop\proyecto 2\Backend Original\PruebasBackend\PruebasBackend
 C:\Users\Krl's\Desktop\proyecto 2\Backend Original\PruebasBackend\PruebasBackendServicios\obj\Debug\netcoreapp3.1\PruebasBackendServicios.pdb
 C:\Users\Krl's\Desktop\proyecto 2\Backend Original\PruebasBackend\PruebasBackendServicios\obj\Debug\netcoreapp3.1\PruebasBackendServicios.genruntimeconfig.cache
 C:\Users\Krl's\Desktop\proyecto 2\Backend Original\PruebasBackend\PruebasBackendServicios\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Krl's\Desktop\proyecto 2\Backend Original\PruebasBackend\PruebasBackendServicios\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\gestorsvg - Zip Deploy\profile.arm.json
+C:\Users\Krl's\Desktop\proyecto 2\Backend Original\PruebasBackend\PruebasBackendServicios\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\gestorsvg\profile.arm.json
